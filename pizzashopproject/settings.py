@@ -71,6 +71,10 @@ TEMPLATES = [
     },
 ]
 
+import django_heroku
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+
 
 WSGI_APPLICATION = 'pizzashopproject.wsgi.application'
 
